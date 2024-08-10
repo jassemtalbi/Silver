@@ -84,6 +84,7 @@
 	<h1>Task Management</h1>
 	<TodoSearch />
   
+	
 	<button class="add-task-button" on:click={openModalForNewTask}>Add New Task</button>
   
 	{#if showModal}
