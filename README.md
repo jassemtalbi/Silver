@@ -36,3 +36,60 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+# Task Management Application
+
+Welcome to the Task Management Application, a robust platform designed to help you organize and manage your tasks effectively. Built with SvelteKit, this application provides seamless user authentication, task prioritization, and a user-friendly interface.
+
+## Features
+
+- **User Authentication**: Secure sign-up and sign-in functionality to manage tasks individually.
+- **Task Management**: Create, edit, and delete tasks with ease.
+- **Task Prioritization**: Assign priority levels (low, medium, high) to tasks for better focus.
+- **Search Functionality**: Quickly search through tasks using a dynamic search bar.
+- **Responsive Design**: Enjoy a consistent user experience across devices.
+- **Mock Database**: Demonstrative data handling for local development.
+
+## Table of Contents
+
+1. [Project Structure](#project-structure)
+2. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+   - [Running Locally](#running-locally)
+   - [Building for Production](#building-for-production)
+3. [Deployment](#deployment)
+   - [Deploying to Vercel](#deploying-to-vercel)
+4. [Customization and Extensions](#customization-and-extensions)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Acknowledgments](#acknowledgments)
+
+## Project Structure
+
+```plaintext
+my-app/
+├── src/
+│   ├── routes/
+│   │   ├── api/
+│   │   │   ├── login/
+│   │   │   │   └── +server.ts
+│   │   │   ├── signup/
+│   │   │   │   └── +server.ts
+│   │   ├── tasks/
+│   │   │   └── +page.svelte
+│   │   ├── signin/
+│   │   │   └── +page.svelte
+│   │   └── signup/
+│   │       └── +page.svelte
+│   ├── lib/
+│   │   ├── stores/
+│   │   │   └── session.ts
+│   │   ├── TodoColumn.svelte
+│   │   ├── TodoCard.svelte
+│   │   ├── TodoModal.svelte
+│   │   └── TodoSearch.svelte
+├── svelte.config.js
+├── package.json
+├── package-lock.json
+└── .gitignore
