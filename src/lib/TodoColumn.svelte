@@ -35,7 +35,6 @@
   >
     <div class="header-container">
       <h2>{title}</h2>
-      <!-- <div class="header-accent"></div> -->
     </div>
     {#each filteredTodos as todo (todo.id)}
       <TodoCard {todo} onDrop={updateTodoStatus} onEdit={onEdit} onRemove={onRemove} />

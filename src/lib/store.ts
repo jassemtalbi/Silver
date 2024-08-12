@@ -12,23 +12,19 @@ export interface Todo {
   status: 'todo' | 'doing' | 'done';
 }
 
-// Initialize todos with an empty array or from localStorage if available
 const initialTodos: Todo[] = browser
   ? JSON.parse(localStorage.getItem('todos') || '[]')
   : [];
 
-// Define and export the todos and searchQuery stores
 export const todos = writable<Todo[]>(initialTodos);
-export const searchQuery = writable<string>(''); // Export searchQuery store
+export const searchQuery = writable<string>(''); 
 
-// Subscribe to todos store and save changes to localStorage
 if (browser) {
   todos.subscribe((value) => {
     localStorage.setItem('todos', JSON.stringify(value));
   });
 }
 
-// Updated addTodo function
 export function addTodo(details: {
   text: string;
   description?: string;

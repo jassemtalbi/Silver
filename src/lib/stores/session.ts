@@ -1,14 +1,12 @@
 import { writable } from 'svelte/store';
 
-// Define a type for session data
 type Session = {
   user?: {
     email: string;
   };
-  token?: string; // Include a token if your API uses token-based auth
+  token?: string; 
 };
 
-// Create a writable store for session
 export const session = writable<Session>({});
 
 // Load session from localStorage if available

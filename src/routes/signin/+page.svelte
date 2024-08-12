@@ -10,7 +10,7 @@
 	  event.preventDefault();
 	  try {
 		await login(email, password);
-		goto('/tasks'); // Redirect to the tasks page upon successful login
+		goto('/tasks'); 
 	  } catch (error) {
 		errorMessage = 'Login failed. Please check your credentials and try again.';
 	  }

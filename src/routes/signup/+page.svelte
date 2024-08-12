@@ -50,7 +50,6 @@
   </main>
   
   <style>
-	/* Styles similar to the sign-in page */
 	.auth-container {
 	  display: flex;
 	  justify-content: center;
